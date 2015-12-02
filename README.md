@@ -109,7 +109,7 @@ The configuration created by the registerService calls should usually be done in
 In think my.logger should **not** be allowed to be a service, because it would result in any creation of the DependencyInjectionContainer triggering the creation of any services it can possibly populate something with. That would have an unnecessary negative impact on performance. Anything using the DependencyInjectionService should be Container Aware.
 
 Resulting in code:
-```
+``` php
 $dependenyInjectionService = $container->get('dependencyinjectionservice');
 
 $myLoggerAwareObject = new MyObject(); 
