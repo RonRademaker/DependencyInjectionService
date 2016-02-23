@@ -1,0 +1,18 @@
+{
+    "require-dev": {
+        "symfony/dependency-injection": "^3.0",
+        "psr/log": "^1.0",
+        "phpunit/phpunit": "^4.7",
+        "mockery/mockery": "^0.9.4"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    }
+}
